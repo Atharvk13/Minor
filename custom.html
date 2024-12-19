@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Page</title>
+  <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+  <!-- Background Image Section -->
+  <div class="background-image">
+    <!-- <img src="freepik__enhance__87284.png" alt="Background Image"> -->
+  </div>
+
+  <!-- Main Content Section -->
+  <div class="heading-container">
+    <h1 class="main-heading">Custom</h1>
+  </div>
+  
+  <form class="filter-container">
+    <div class="filter-panel">
+      <div class="filter-content">
+        <!-- Class Name Section -->
+        <label for="className" class="filter-label">Class Name</label>
+        <input type="text" id="className" class="text-input" aria-label="Enter Class Name">
+
+        <!-- Semester Section -->
+        <div class="semester-wrapper">
+          <label for="semester" class="filter-label">Semester</label>
+          <select id="semester" class="dropdown-field" aria-label="Select Semester">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+
+        <!-- Session Section (Empty Dropdown) -->
+        <div class="session-wrapper">
+          <label for="session" class="filter-label">Session</label>
+          <select id="session" class="dropdown-field" aria-label="Select Session"></select>
+        </div>
+
+        <!-- Generate Button -->
+        <button type="submit" class="generate-button" tabindex="0">Generate</button>
+      </div>
+    </div>
+  </form>
+</body>
+</html>

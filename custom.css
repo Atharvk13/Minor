@@ -1,0 +1,98 @@
+/* Set the background image to cover the entire screen */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('freepik__enhance__87284.png') no-repeat center center fixed; 
+    background-size:contain; /* Ensure the image covers the full viewport */
+  }
+  
+  .heading-container {
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .main-heading {
+    font: 600 36px Luxurious Roman, sans-serif;
+    color: white; /* Class heading in white */
+    margin-bottom: 20px;
+  }
+  
+  .filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .filter-panel {
+    border-radius: 70px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for filter panel */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Set a fixed width for the panel */
+    max-width: 100%;
+  }
+  
+  .filter-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px; /* Even spacing between elements */
+  }
+  
+  .filter-label {
+    color: black; /* Black text */
+    font: 400 20px Luxurious Roman, sans-serif; /* Uniform size */
+  }
+  
+  .text-input,
+  .dropdown-field {
+    background-color: #D0EAFA; /* Blue background */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 12px; /* Consistent padding for inputs */
+    font-size: 16px;
+    color: black; /* Black text */
+    width: 100%; /* Uniform width */
+  }
+  
+  .generate-button {
+    border-radius: 60px;
+    background-color: #D0EAFA;
+    align-self: center;
+    margin-top: 20px;
+    width: 150px;
+    max-width: 100%;
+    color: black; /* Changed text color to black */
+    font: 400 20px Luxurious Roman, sans-serif;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #ccc; /* Slight border for better definition */
+  }
+  
+  @media (max-width: 991px) {
+    .filter-panel {
+      padding: 20px;
+      width: 90%; /* Make it responsive on smaller screens */
+    }
+  
+    .main-heading {
+      font-size: 30px;
+    }
+  
+    .generate-button {
+      white-space: nowrap;
+    }
+  }
+  

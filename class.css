@@ -1,4 +1,13 @@
-/* Set the background image to cover the entire screen */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}/* Set the background image to cover the entire screen */
 body {
     margin: 0;
     padding: 0;
@@ -32,12 +41,13 @@ body {
   
   .filter-panel {
     border-radius: 70px;
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for filter panel */
+    background-color: white;
     display: flex;
+    margin-top: 50px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 50px;
+    padding: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 350px; /* Set a fixed width for the panel */
     max-width: 100%;
@@ -47,23 +57,25 @@ body {
     display: flex;
     width: 100%;
     flex-direction: column;
-    gap: 20px; /* Even spacing between elements */
+    gap: 13px; /* Even spacing between elements */
   }
   
   .filter-label {
-    color: black; /* Black text */
-    font: 400 20px Luxurious Roman, sans-serif; /* Uniform size */
+    font-family: "Kaisei Tokumin", serif;
+    color: rgb(36, 151, 204); /* Black text */
+    font: 400 16px Luxurious Roman, sans-serif; /* Uniform size */
   }
   
   .text-input,
   .dropdown-field {
-    background-color: #D0EAFA; /* Blue background */
+    background-color: #c9e6f8; /* Blue background */
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px 12px; /* Consistent padding for inputs */
-    font-size: 16px;
-    color: black; /* Black text */
+    padding: 10px 10px; /* Consistent padding for inputs */
+    font-size: 14px;
+    color: rgb(5, 106, 139); /* Black text */
     width: 100%; /* Uniform width */
+    height: 35px;
   }
   
   .generate-button {
@@ -71,10 +83,10 @@ body {
     background-color: #D0EAFA;
     align-self: center;
     margin-top: 20px;
-    width: 150px;
+    width: 120px;
     max-width: 100%;
-    color: black; /* Changed text color to black */
-    font: 400 20px Luxurious Roman, sans-serif;
+    color: rgb(25, 104, 161); /* Changed text color to black */
+    font: 400 14px Luxurious Roman, sans-serif;
     padding: 10px;
     cursor: pointer;
     text-align: center;
